@@ -1,0 +1,416 @@
+{
+  "doctors" : [ {
+    "experience" : "2002-08-22",
+    "id" : 1,
+    "name" : "Ivan Sidorov",
+    "photo" : "some photo here",
+    "profession" : "therapist",
+    "schedule" : {
+      "07" : [ null, null, null, null, null, null, null, null, null, null, null, null, null, false, false, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      }, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      }, false, false, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      }, false, false, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      }, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      }, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      }, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      }, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      }, false, false, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      }, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      }, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      } ]
+    },
+    "skillsDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, magnam. Maxime nisi dolorum consectetur dolor impedit veniam placeat nobis repudiandae quibusdam aperiam!",
+    "speciality" : [ "service1", "service2", "service3", "service4", "service5" ]
+  }, {
+    "experience" : "2007-04-15",
+    "id" : 2,
+    "name " : "Sidor Ivanov",
+    "photo" : "some photo here",
+    "profession" : "surgeon",
+    "schedule" : {
+      "07" : [ null, null, null, null, null, null, null, null, null, null, null, null, null, false, false, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      }, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      }, false, false, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      }, false, false, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      }, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      }, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      }, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      }, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      }, false, false, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      }, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      }, {
+        "08:00" : true,
+        "09:00" : true,
+        "10:00" : true,
+        "11:00" : true,
+        "12:00" : true,
+        "13:00" : true,
+        "14:00" : true,
+        "15:00" : true,
+        "16:00" : true,
+        "17:00" : true
+      } ]
+    },
+    "skillsDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, magnam. Maxime nisi dolorum consectetur dolor impedit veniam placeat nobis repudiandae quibusdam aperiam!",
+    "speciality" : [ "service8", "service2", "service3", "service9", "service5" ]
+  } ],
+  "orders" : [ null, {
+    "comment" : "www",
+    "date" : {
+      "day" : "12",
+      "month" : "07",
+      "year" : "2019"
+    },
+    "doctorId" : 1,
+    "id" : 2,
+    "spec" : "service2",
+    "time" : "10:00"
+  }, {
+    "comment" : "aaa",
+    "date" : {
+      "day" : "12",
+      "month" : "07",
+      "year" : "2019"
+    },
+    "doctorId" : 1,
+    "id" : 3,
+    "spec" : "service2",
+    "time" : "10:00"
+  }, {
+    "comment" : "fffff",
+    "date" : {
+      "day" : "12",
+      "month" : "07",
+      "year" : "2019"
+    },
+    "doctorId" : 1,
+    "id" : 4,
+    "spec" : "service3",
+    "time" : "15:00"
+  }, {
+    "comment" : "xxxx",
+    "date" : {
+      "day" : "13",
+      "month" : "07",
+      "year" : "2019"
+    },
+    "doctorId" : 1,
+    "id" : 5,
+    "price" : 200,
+    "spec" : "service2",
+    "time" : "12:00"
+  }, {
+    "comment" : "bbbb",
+    "date" : {
+      "day" : "13",
+      "month" : "07",
+      "year" : "2019"
+    },
+    "doctorId" : 1,
+    "id" : 6,
+    "price" : 300,
+    "spec" : "service3",
+    "time" : "13:00"
+  } ],
+  "reviews" : [ {
+    "group" : "doctors",
+    "id" : 1,
+    "text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+  }, {
+    "group" : "services",
+    "id" : 2,
+    "text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+  } ],
+  "services" : {
+    "service1" : {
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "duration" : 1,
+      "id" : 1,
+      "name" : "Operation1",
+      "price" : 100
+    },
+    "service2" : {
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "duration" : 2,
+      "id" : 2,
+      "name" : "Operation2",
+      "price" : 200
+    },
+    "service3" : {
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "duration" : 3,
+      "id" : 3,
+      "name" : "Operation3",
+      "price" : 300
+    },
+    "service4" : {
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "duration" : 1,
+      "id" : 4,
+      "name" : "Operation4",
+      "price" : 400
+    },
+    "service5" : {
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "duration" : 1,
+      "id" : 5,
+      "name" : "Operation5",
+      "price" : 500
+    },
+    "service6" : {
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "duration" : 4,
+      "id" : 6,
+      "name" : "Operation6",
+      "price" : 600
+    },
+    "service7" : {
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "duration" : 3,
+      "id" : 7,
+      "name" : "Operation7",
+      "price" : 700
+    },
+    "service8" : {
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "duration" : 1,
+      "id" : 8,
+      "name" : "Operation8",
+      "price" : 800
+    },
+    "service9" : {
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "duration" : 2,
+      "id" : 9,
+      "name" : "Operation9",
+      "price" : 900
+    }
+  },
+  "users" : [ {
+    "email" : "dead1990bb@gmail.com",
+    "id" : 1,
+    "lastName" : "Kozhin",
+    "name" : "Boris",
+    "password" : "123456",
+    "phone" : "380938807183",
+    "root" : true
+  }, {
+    "email" : "fff@fff",
+    "id" : 2,
+    "lastName" : "fff",
+    "name" : "Doris",
+    "password" : "123456",
+    "phone" : "380938807185",
+    "root" : false
+  } ]
+}

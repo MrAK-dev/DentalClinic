@@ -1,0 +1,138 @@
+$header-color: #d4d5d7;
+$main-title-color: #3b3b3b;
+$main-text-color: #101010;
+$main-color:   #789084;
+$hover-color: #b1e8ca;
+$opacity-color: rgba(17,17,17,0.8);
+
+
+.auth-wrapper {
+	background-color: $opacity-color;
+	min-height: 100vh;
+	@media (max-width: 1024px) {
+		min-height: 100vh;
+	}
+}
+
+.auth {
+	width: 100%;
+	height: 100%;
+	&__content {
+		width: 28rem;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: rgba(17, 17, 17, 0.8);
+		padding: 1.5rem;
+		border: 1px solid #eee;
+		margin-top: 40px;
+		@media (max-width: 1024px) {
+			top: 35%;
+		}
+	}
+	&__text {
+		font-size: 1.2rem;
+		color:	$hover-color;
+	}
+
+	&__toggle-span {
+		font-weight: bold;
+		color: rgb(102, 104, 223);
+		margin-left: 20px;
+		cursor: pointer;
+	}
+
+	&__auth-box {
+		margin-bottom: 2rem;
+	}
+
+	&__control-box {
+		margin-top: 2rem;
+	}
+
+	&__error-auth-text {
+		margin-top: 1rem;
+		text-align: center;
+		width: 100%;
+		color: #d7394c;
+		font-size: 2rem;
+	}
+
+	&__success-auth-text {
+		margin-top: 1rem;
+		text-align: center;
+		width: 100%;
+		color: $hover-color;
+		font-size: 2rem;
+	}
+
+	&__submit-btn {
+		width: 100%;
+		border: 1px solid #eee;
+		border-radius: 3px;
+		color: $opacity-color;
+		background-color: $hover-color;
+		border: none;
+		cursor: pointer;
+		font-weight: 600;
+		font-size: 1.2rem;
+		transition: 0.2s;
+		padding: 0.5rem 1rem;
+
+		&:focus {
+			outline: none;
+		}
+		&:hover {
+			color:  $opacity-color;
+			background-color: $main-color;
+			outline: none;
+			transform: translateY(-1px);
+			box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+			&:after {
+				transform: scaleX(1.4) scaleY(1.6);
+				opacity: 0;
+			}
+		}
+
+		&:disabled {
+			color: $main-title-color;
+			background-color: #eee;
+		}	
+	}
+}
+
+// input
+.input-box {
+	display: flex;
+	flex-direction: column;
+	color: $header-color;
+	font-weight: 700;
+	margin-top: 10px;
+	&__input {
+		font-family: inherit;
+		
+		font-size: 1em;
+		padding: 0.5rem 1rem;
+		border-radius: 2px;
+		background-color: rgba(255, 255, 255, 0.5);
+		border: none;
+		border-bottom: 3px solid #eee;
+		width: 100%;
+		display: block;
+		transition: all 0.3s;
+
+		&:focus {
+			outline: none;
+			box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+			border-bottom: 3px solid green;
+		}
+
+		&--fail {
+			border-bottom: 3px solid #9e4560;
+		}
+	}
+}
+
+
+

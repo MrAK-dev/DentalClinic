@@ -1,0 +1,67 @@
+$header-color: #d4d5d7;
+$main-title-color: #3b3b3b;
+$main-color:   #789084;
+$hover-color: #b1e8ca;
+$opacity-color: rgba(17,17,17,0.8);
+
+.calendar-container {
+    display: flex;
+    flex-direction: column ;
+    margin: 0px 20px;
+    @media (max-width: 819px) {
+        margin: 0 auto;
+    }
+    .calendar-title-box {
+        display: flex;
+        align-self: flex-start;
+        margin: 5px 0;
+        flex-direction: row;
+        align-items: center;
+        h4 {
+            margin: 0 20px;
+            font-weight: 400;
+            font-size: 0.9em;
+        }
+    }
+    .weekdays {
+        display: flex;
+        p {
+           margin: 0 5px;
+           font-size: 0.8em;
+           text-align:center;
+           width: 40px;
+           height: 40px;
+           @media (max-width: 414px) {
+            width: 35px;
+            }
+            @media (max-width: 320px) {
+                width: 30px;
+            }
+        }
+    }
+    .days {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 350px;
+        margin: 5px 0;
+    }
+    .angle {
+        width: 30px;
+        height: 35px;
+        margin: 15px auto 10px;
+    }
+    button {
+        width: 50px;
+        height: 35px;
+        font-size: 0.8em;
+        @media (max-width: 414px) {
+            width: 45px;
+        }
+        @media (max-width: 320px) {
+            width: 40px;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}

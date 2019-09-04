@@ -1,0 +1,1213 @@
+$header-color: #d4d5d7;
+$main-title-color: #3b3b3b;
+$main-color:   #789084;
+$hover-color: #b1e8ca;
+$opacity-color: rgba(17,17,17,0.8);
+
+//
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+}
+
+.main {
+	background-image: url(../assets/images/fon6.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 100vh;
+	scroll-behavior: smooth;
+}
+
+.container {
+	background-image: url(../assets/images/fon1.jpg);
+	background-size: cover;
+	min-height: 100vh;
+	// @media (max-width: 1024px) {
+	// 	background-position-x: -450px;
+	// }
+	@media (max-width: 768px) {
+		background-position-x: -270px;
+	}
+	@media (max-width: 414px) {
+		background-position-x: -330px;
+	}
+	@media (max-width: 375px) {
+		background-position-x: -285px;
+	}
+	@media (max-width: 320px) {
+		background-position-x: -250px;
+	}
+}
+
+.wrapper,
+.info-wrap {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+// __________SIDEBAR __________
+aside {
+	position: fixed;
+	top: 50%;
+	right: 2%;
+	z-index: 999999;
+	.sidebar-ul {
+		list-style: none;
+		.sidebar-item {
+			margin-top: 15px;
+		}
+	}
+	.nav-link {
+		text-decoration: none;
+		margin-top: 15px;
+		padding: 15px 0;
+	}
+	@media (max-width: 1024px) {
+		top: 70%;	
+	}
+	@media (max-width: 375px) {
+		top: 75%;	
+	}
+	@media (max-width: 320px) {
+		top: 25%;	
+	}
+}
+
+// _______loadrer______________
+.loader-box {
+	border: none;
+	min-width: 100vw;
+	min-height: 100vh;
+	background-color: $opacity-color;
+	.loader {
+		margin: 0 auto;
+		position: fixed;
+		top: 30%;
+		left: 40%;
+		@media (max-width: 1024px) {
+			left: 35%;
+			width: 20%;
+		}
+		@media (max-width: 768px) {
+			left: 30%;
+			width: 15%;
+		}
+		@media (max-width: 768px) {
+			left: 25%;
+			width: 50%;
+		}
+	}
+
+}
+
+// _________page-not-found_____________
+.page-not-found {
+	text-align: center;
+	margin: 0 auto;
+}
+
+// _______header +  navigation______________
+.header,
+.footer {
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+   	margin: 0 auto ;
+    vertical-align: middle;
+	font-weight: 700;
+	background-color: $opacity-color;
+	position: fixed;
+	top: 0;
+	z-index: 99999;
+
+	& .nav {
+		margin-top: 25px;
+		font-size: 1em;
+		line-height: 24px;
+		font-weight: bold;
+		letter-spacing: 0.075em;
+		@media (max-width: 768px) {
+			margin-top: 10px;	
+		}
+	}
+	& .list {
+		list-style: none;
+		padding: 2px;
+		margin: 0;
+        display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		text-transform: uppercase;
+		@media (max-width: 768px) {
+			display: none;	
+			// display: flex;
+			// flex-direction: column;
+			// position: absolute;
+			// right: 0%;
+			// top: 100%;
+			// padding: 10px 20px;
+			// background-color: rgba(17,17,17,0.8);
+		}
+
+	}
+	& .item {
+		padding: 0;
+		&:not(:last-child) {
+			margin-right: 25px;
+			@media (max-width: 768px) {
+				// margin-right: 10px;	
+			}
+		}
+		&:last-child a {
+			color: $hover-color;
+			text-align: start;
+			vertical-align: top;
+			&:hover {
+				color: #4dea94;
+			}
+			&:hover .icon-exit:before  {
+				color: #4dea94;
+			  }
+		}
+		a {
+			text-decoration: none;
+			font-family: 'Montserrat', sans-serif;
+			color: $header-color;
+			padding: 20px 3px;
+			&:hover {
+				color: $hover-color;
+			}
+		}
+	}
+	.logo-box {
+		margin-right: 50px;
+		@media (max-width: 768px) {
+			margin-right: 0;	
+		}
+	}
+	.logo-box  img {
+		width: 100px;
+		@media (max-width: 768px) {
+			// width: 150px;	
+		}
+	}	
+}
+	
+// ________banner + title_________
+.title-box {
+	color: $header-color;
+	margin: 0px 40px;
+	padding-bottom: 45px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	@media (max-width: 768px) {
+	width: 100%;
+	margin: 0;
+	}
+	img {
+		margin: 150px auto 30px;
+		max-width: 300px;
+		@media (max-width: 768px) {
+			// max-width: 200px;	
+			margin-top: 250px;
+		}
+		@media (max-width: 414px) {
+			max-width: 200px;	
+			margin-top: 175px;
+		}
+		@media (max-width: 375px) {
+			max-width: 200px;	
+			margin-bottom: 5px;
+		}
+	}
+	h1{
+		text-transform: uppercase;
+		background-color: $opacity-color;
+		width: 85%;
+		font-size: 2.4em;
+		padding: 35px;
+		line-height: 1em;
+		letter-spacing: 0.05em;
+		font-weight: bold;
+		margin: 30px auto 0;
+		text-align: center;
+		@media (max-width: 768px) {
+			font-size: 30px;
+			padding: 15px;	
+		}
+		@media (max-width: 414px) {
+			font-size: 20px;
+			// padding: 15px;	
+		}
+		@media (max-width: 375px) {
+			font-size: 15px;
+			padding: 5px;	
+		}
+	}
+}
+
+// ________buttons _________
+.btn {
+	display: block;
+	min-height: 50px;
+	width: 60%;
+	margin: 20px auto;
+	color: $main-color;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.05em;
+	font-size: 0.9em;
+	font-weight: bold;
+	line-height: 35px;
+	padding-top: 7px;
+	border: none;
+	border-radius: 3px;
+	background-color:  $hover-color;
+	transition-duration: 0.4s;
+	&:hover {
+		box-shadow: none;
+		background-color: $main-color;
+		color: $header-color;
+	}
+	&:focus {
+		outline: none;
+	}
+	@media (max-width: 768px) {
+		width: 100%;
+		margin: 20px 0px;	
+	}
+}
+
+.link,
+.more {
+	width: 100%;
+	display: block;
+	padding: 10px 2px;
+	text-align: center;
+	@media (max-width: 1024px) {
+		font-size: 0.7em;
+		padding: 5px 2px;
+	}
+	@media (max-width: 768px) {
+		font-size: 0.6em;
+		padding: 5px 2px;
+	}
+}
+
+.more {
+	background-color: $main-color;
+	color: $opacity-color;
+	&:hover {
+	color: $main-color;
+	background-color: $opacity-color;
+	}
+}
+
+
+.service-btn {
+	font-size: 0.7em;
+	margin: 0;
+	width: 100%;
+	line-height: 2em;
+	padding: 0.5rem;
+	min-height: 35px;
+	margin: 2px 0;
+	background-color: $main-color;
+	color: $header-color;
+	&:hover {
+		color: $opacity-color;
+	}
+}
+.nav-exit {
+	background-color: none;
+	border: none;	
+	height: 30px;
+}
+// ______________________________________//
+
+//  ___________section About Us______________
+.aboutsection, 
+.team-container,
+.doctors-wrap,
+.info-wrap,
+h2  {
+	background-color: $opacity-color;
+	box-shadow: 0px 0px 15px 15px  $opacity-color;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	font-family: 'Montserrat', sans-serif;
+	color: $header-color;
+	text-align: justify;
+	padding: 15px 15px 50px;
+	@media (max-width: 768px) {
+		padding: 3px;
+		margin: 25px 10px;	
+	}
+}
+h2 {
+	// border: none;
+	font-size: 36px;
+	padding: 2px;
+	background: none;
+	box-shadow: none;
+	color: $main-color;
+	border-bottom: 1px solid $opacity-color;
+	@media (max-width: 1024px) {
+		padding: 2px 15px;
+	}
+}
+// ____
+
+
+// ____________second banner____________ 
+.case {
+	position: relative;
+	.banner {
+		display: block;
+		width: 100%;
+		margin: 15px auto;
+		padding: 15px 0;
+	}
+	.button-box {
+		position: absolute; 
+		top: 70%;
+		right: 0%;
+		height: 90px;
+		width: 100%;
+		background-color: rgba(255,255,255,0.4);
+		margin: 20px 0;
+		text-align: center;
+		.btn {
+			width: 35%;
+			float: right;
+			margin: 20px;
+			display: block;
+			padding-top: 7px;
+			@media (max-width: 768px) {
+				width: 100%;
+				margin: 20px 0px;
+			}
+		}
+		@media (max-width: 768px) {
+			top: 50%;
+		}
+	}
+}
+
+// ______shortly about doctors ________
+.team-container,
+.doctors-wrap {
+	color: $header-color;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	padding: 15px 5px 50px;
+	@media (max-width: 768px) {
+		justify-content: center;
+	}
+	.item {
+		width: 20%;
+		margin: 10px 40px; 
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		border-radius: 5px;
+		box-shadow: 0px 2px 8px 1px $main-color;
+		@media (max-width: 768px) {
+			width: 30%;
+		}
+		@media (max-width: 414px) {
+			width: 100%;
+			margin: 20px 10px;
+		}
+		.photo {
+			border-radius: 5px; 
+			img {
+				border-radius: 5px;
+				width: 100%;
+			}
+		}
+		h3 {
+			margin: 10px;
+			font-size: 1em;
+		}
+		p {
+			margin: 5px;
+			font-size: 0.9em;
+		} 
+		.link	{
+			font-size: 0.6em;
+		}
+		// .link-box {
+		// 	margin-top: 20px;
+		// }
+
+	}
+
+}
+
+.team-container {
+	.item {
+		max-height: 100%;
+		position: relative;
+		.desc {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: none;
+			background-color: $opacity-color;
+			border-radius: 5px;
+			line-height: 1.2em;
+			height: 100%;
+			width: 100%;
+		}
+		.photo {
+			overflow: hidden;
+			line-height: 0;
+			&:hover .desc {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+			a {
+				color: $header-color;	
+				text-decoration: none;	
+			}
+	}
+	}
+}
+
+
+
+// _____DOCTORS_____ 
+.doctors-wrap {
+	padding-top: 110px;	
+	@media (max-width: 768px) {
+		padding-top: 65px;
+	}
+	.item {
+		.photo {
+			position: relative;
+			line-height: 0;
+			.hover-block {
+				display: none;
+				height: 100%;
+				width: 100%;
+				background-color: $opacity-color;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			&:hover .hover-block {
+				display: flex;
+				flex-direction: column;
+				align-items: bottom;
+				justify-content: flex-end;
+			}
+		}
+
+		h3 {
+			font-size: 1em;
+			@media (max-width: 375px) {
+				font-size: 0.8em;
+			}
+		}
+	}	
+}
+.info-wrap {
+	padding: 110px 20px 25px;
+	min-height: 100vh;
+	flex-direction: row;
+	 .info {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		color: $header-color;
+		.info-item {
+			margin: 0 20px 10px; 
+			@media (max-width: 414px) {
+				margin: 0;
+			}
+			p {
+				margin: 5px 0;
+				text-align: left;
+			}
+			img {
+				border-radius: 3px;
+				box-shadow: 1px 1px 15px 1px $hover-color;
+			}	
+		}
+		.info-desc {
+			width: 50%;
+		}
+	}
+}
+
+
+.card {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	flex-wrap: wrap;
+	color: $header-color;
+	h3 {
+		margin: 0;
+		font-size: 1.4em;
+		line-height: 1.6em;
+		text-align:  center;
+		@media (max-width: 768px) {
+			text-align: center;
+		}
+		@media (max-width: 320px) {
+			font-size: 1.2em;
+		}
+	}
+	.card-item {
+		margin: 0 20px 10px; 
+		@media (max-width: 414px) {
+			margin: 0;
+		}
+		p {
+			margin: 5px 0;
+			text-align: left;
+		}
+		img {
+			border-radius: 3px;
+			box-shadow: 1px 1px 15px 1px $hover-color;
+		}	
+	}
+}		
+.present {
+	flex-basis: 20%;
+	display: flex;
+	justify-content: space-evenly;
+	transition: all 0.5s ease;
+	@media (max-width: 769px) {
+		flex-direction: column;
+		flex-basis: 100%;
+	}
+	@media (max-width: 414px) {
+		flex-basis: 65%;
+	}
+	.photo {
+		text-align:center;
+		img {
+			width: 55%;
+			@media (max-width: 769px) {
+				width: 30%;
+			}
+			@media (max-width: 414px) {
+			width: 50%;
+			}
+		}
+	}
+	.order {
+		// flex-basis: 55%;
+		transition: all 0.5s ease;
+		.highlights {
+			font-weight: 700;
+			color: $hover-color;
+			letter-spacing: 0.1em;
+			text-align: center;
+			@media (max-width: 819px) {
+				text-align: center;
+			}
+		}
+	}
+}
+.card .desc {
+	transition: all 0.5s ease;
+	display: flex;
+	flex-direction: row;
+	flex-basis: 100%;
+	justify-content: space-evenly;
+	padding: 5px 20px;
+	@media (max-width: 769px) {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		margin-top: 60px;
+	}
+	@media (max-width: 414px) {
+		margin: 5px;
+		padding: 5px;
+	}
+	@media (max-width: 320px) {
+		margin: 0px;
+	}
+	.date-container {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		transition: all 0.5s ease;
+		max-width: 40%;
+		@media (max-width: 769px) {
+			max-width: 80%;
+		}
+		@media (max-width: 414px) {
+			max-width: 100%;
+		}
+	}
+	.order-information {
+		order: -1;	
+		margin-top: 15px;
+		padding: 5px 10px;
+		text-align: center;
+		width: 45%;
+		transition: all 0.5s ease;
+		@media (max-width: 414px) {
+			width: 85%;
+		}
+		p {
+			text-align: left;
+			font-size: 0.8em;
+			line-height: 1.2em;
+		}
+		.link {
+			font-size: 0.7em;
+			padding: 10px;
+			margin: 10px 0;
+		}
+	}
+}
+
+
+
+// _____ APPOINTMENT _________
+
+.appointment {
+	width: 100%;
+	display: flex;
+	border: 1px solid $hover-color;
+	border-radius: 3px;
+	padding: 0.5rem;
+	margin: 10px 0;
+	color: $opacity-color;
+	background-color: $header-color;
+	cursor: pointer;
+	-webkit-appearance: none; 
+   -moz-appearance: none;
+   appearance: none;       /* remove default arrow */
+ 	&:focus {
+		outline: none;
+	}
+	option {
+		max-width: 90%;
+	}
+}
+.appointment-time {
+	transition: all 0.5s ease;
+	.btn-box {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin: 55px 0 10px;
+		@media (max-width: 1024px) {
+			margin-top: 10px;
+		}
+	}
+	.radio {
+		display: none;
+	}
+	.radio-btn {
+		flex-basis: 10%;
+	}
+	label {
+		margin: 10px 10px 3px 10px;
+		padding: 3px 10px;
+		display: block;
+		min-width: 75px;	
+		background-color: $hover-color;
+		color: $opacity-color;
+		&:hover {
+			background-color: $main-color;
+			color: $header-color;
+		}
+		@media (max-width: 320px) {
+			margin: 10px 5px 3px 10px;
+		}
+	}
+	.radio-btn input[type="radio"]:checked + label {
+		background-color: $main-color;
+		color: $header-color;
+	}
+}
+.comment {
+	resize: none;
+	background-color: $main-color;
+	&::placeholder {
+		color: $opacity-color;  
+	}
+}
+
+
+
+//  ______Footer______
+.footer {
+	font-family: 'Montserrat', sans-serif;
+	position: static;
+	background-image: url(../assets/images/bg2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	justify-content: space-between;
+	padding: 0px 0px;
+	color: $opacity-color;
+	font-size: 1.3em;
+	@media (max-width: 768px) {
+		justify-content: center;
+	}
+	h4 {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-size: 1.3em;
+		margin: 5px;
+	}
+	.logo-box {
+		margin-right: 0px;
+		padding-top: 15px;
+		@media (max-width: 768px) {
+			margin-right: 0;
+			order: -1;	
+		}
+	}
+	.logo-box  img {
+		width: 250px;
+		@media (max-width: 768px) {
+			width: 200px;	
+		}
+		@media (max-width: 414px) {
+			width: 150px;	
+		}
+		@media (max-width: 375px) {
+			width: 100px;	
+		}
+	}	
+	.contacts {
+		background-color: $opacity-color;
+		color: $header-color;
+		padding: 20px 15px;
+		min-width: 30%;
+		text-align: center;
+		font-size: 1em;
+		font-weight: 400;
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+		@media (max-width: 768px) {
+			font-size: 0.7em;
+		}
+	}
+	
+}
+
+
+
+
+
+// _______ADMIN PANEL __________
+.btn-box {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	@media (max-width: 768px) {
+		justify-content: center;
+	}
+	.admin {
+		width: 15%;	
+		margin: 3px;
+		font-size: 0.7em;
+		@media (max-width: 768px) {
+			width: 80%;	
+			margin: 10px 5px;
+		}
+	}
+}
+.option,
+.change-services-doctors {
+	width: 40%;
+	margin: 0 auto;
+	align-items: center;
+	@media (max-width: 768px) {
+		flex-direction: column-reverse;
+		width: 85%;
+	}
+	@media (max-width: 414px) {
+		width: 100%;
+	}
+}
+.admin-appointment {
+	width: 100%;
+}
+.shedule-container {
+	margin-top: 50px;
+	.option {
+		width: 80%;
+	}
+	.input-box {
+		width: 90%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.shedule-input {
+		margin: 20px 10px 0 0;
+		border: 1px solid $hover-color;
+		border-radius: 3px;
+		padding: 0.5rem;
+	}
+	.right {
+		margin-right: 0;
+	}
+	.month {
+		color: $hover-color;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 0.2em;
+		}
+	.admin {
+		margin-top: 30px;
+		width: 100%;
+	}
+	.shedule {
+		display: flex; 
+		margin: 10px 0px;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.days-of-month {
+			width: 15%;
+			border: 1px solid $hover-color;
+			border-radius: 3px;
+			margin: 10px 20px;
+			text-align: center;
+			.title-day {
+				border-bottom: 1px solid $hover-color;
+				margin: 5px 0;
+			}
+		}
+	}
+
+}
+
+// ___ change-services-doctors____
+.change-services-doctors {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 50px;
+	align-content: stretch;
+	align-items: flex-start;
+	@media (max-width: 768px) {
+		align-content: center;
+	}
+	.select .icon-angle-down:before {
+		top: 55%;
+	  }
+	.form-doctors {
+		display: flex;
+		flex-direction: column;
+	}
+	.admin-form {
+		margin: 2px 0;
+	}
+	.admin-item {
+		width: 35%;
+		margin: 0 50px;
+		@media (max-width: 768px) {
+			width: 85%;
+			margin-bottom: 30px;
+		}
+
+	}
+}
+
+// ______categories _________
+.services {
+	width: 100%;
+	padding-top: 110px;	
+	min-height: 100vh;
+	@media (max-width: 414px) {
+		margin: 25px 0;
+	}
+	.categories {
+		// padding-top: 50px;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;	
+		flex-wrap: wrap;
+		align-content: flex-start;
+		@media (max-width: 768px) {
+			padding-top: 5px;
+		}
+		.service-type {
+			width: 85%;
+			.categories-link {
+				display: block;
+				position: relative;
+				border: 1px solid $hover-color;
+				border-radius: 3px;
+				// margin: 25px 15px;
+				padding: 10px;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: 700;
+				letter-spacing: 0.1em;
+				text-align: center;
+				color: $header-color;
+				box-shadow: 0px 0px 10px 0px $hover-color;
+				&:hover {
+					background-color: $main-color;
+				}
+				@media (max-width: 768px) {
+					margin: 15px;
+				}
+				@media (max-width: 414px) {
+					margin: 5px 0;
+				}
+				@media (max-width: 320px) {
+					margin: 5px;
+					padding: 5px 10px;
+				}
+			}
+			@media (max-width: 1024px) {
+				width: 75%;
+				margin-top: 40px;
+			}
+			@media (max-width: 768px) {
+				width: 65%;
+				margin: 10px;
+			}
+			@media (max-width: 414px) {
+				width: 100%;
+				margin: 10px;
+			}
+			@media (max-width: 320px) {
+				margin: 7px;
+			}
+		}
+	}
+	
+}
+
+// ______services________
+	.serv-wrap {
+		width: 100%;
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: space-between;
+	}
+	.servise-name {
+		width: 95%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-content: stretch;
+		align-items: center;
+		border: 1px solid$hover-color;
+		margin: 10px auto;
+		text-align: center;
+		p {
+			flex-basis: 30%;
+			margin: 5px 10px;
+		}
+		@media (max-width: 414px) {
+			width: 100%;
+		}
+	}
+
+// ________change-user-container_________
+.change-user-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	padding: 5px 10px;
+	.input-box {
+		flex-basis: 50%;
+	}
+	.change-user-form {
+		//  margin-top: 30px;
+		 form {
+			 display: flex;
+			flex-direction: column;
+		 }
+	}
+	.change-user-radio {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin: 55px 0 10px;
+		@media (max-width: 1024px) {
+			margin-top: 10px;
+			display: flex;
+		}
+
+		input[type = "radio"] {
+			display: none;
+		  }
+		  .radio {
+			padding-left: 20px;
+		  }
+		  input[type = "radio"] +label::before {
+			content: "";
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-color: $opacity-color;
+			border: 1px solid $main-color;
+			border-radius: 50%;
+			vertical-align: middle;
+			margin: 10px 10px 10px -10px;
+		  }
+		   input[type = "radio"]:checked + label::before {
+			content: "";
+			color: $main-color;
+			text-align: center;
+			font-size: 16px;
+			background-color: $hover-color;
+			font-weight: bold;
+		  }
+	}
+}
+
+// __________orders-container_____________
+.orders-container {
+	display: flex;
+	justify-content: space-between;
+	.orders-item {
+		width: 55%;
+		margin: 15px;
+	}
+
+	.order {
+		display: flex;
+		flex-direction: column;
+		padding: 10px 25px;
+		border: 1px solid $main-color;
+		border-radius:  3px;
+		margin: 10px 0;
+	}
+	.order-info {
+		text-decoration: none;
+		text-align-last: left;
+		color: $header-color;
+		padding: 5px;
+	}
+	.order-date {
+		display: flex;
+		justify-content: space-between;
+		margin: 10px 0;
+		color: $hover-color;
+		a {
+			color: $hover-color;
+			margin: 0 10px;
+		}
+		p {
+			margin: 0 10px;
+			padding: 5px;
+		}
+	}
+	.name-info {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.info-serv-doc {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			a {
+				display: flex;
+				margin: 0 10px;
+			}
+		}
+	}
+
+}
+
+// __________confirm-button_________
+.confirm-button {
+	position: fixed;
+	left: 0;
+	right: 0;
+	width: 300px;
+	height: 150px;
+	margin: auto;
+	padding: 10px;
+	background-color: $main-color;
+	z-index: 99;
+	h3 {
+		margin: 10px;
+		text-align: center;
+	}
+	.btns{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.confirm {
+		width: 30%;
+		font-size: 0.7em;
+		min-height: 25px;
+		margin: 5px;
+	}
+	.yes:hover {
+		color: $opacity-color;
+		background-color: $hover-color;
+	}
+	.no {
+		background-color: rgb(255, 151, 116);
+	}
+}
+
+// ________change-order-form______________
+.change-order-form {
+	position: absolute;
+	right: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: -3px auto;
+	width: 80%;
+	font-size: 1em;
+	z-index: 55;
+	background-color: $opacity-color;
+	border-radius: 3px;
+	.order-change-input {
+		margin-top: 25px;
+	}
+	input {
+		font-size: 1em;
+	}
+}
+
+
+
+	// _______________ACCORDION___________
+	#accordion {	
+		.service-type {
+			margin: 25px 0 5px;
+			&:target {
+				padding-top: 110px;				
+			}
+		
+		.servise-name {
+				display: none;
+			}
+			&:target .servise-name {
+				display: flex;
+			}
+		}
+		.icon-angle-down:before {
+			top: 22%;
+			color: $header-color;
+		}
+	}

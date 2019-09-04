@@ -1,0 +1,28 @@
+$header-color: #d4d5d7;
+$main-title-color: #3b3b3b;
+$main-color:   #789084;
+$hover-color: #b1e8ca;
+$opacity-color: rgba(17,17,17,0.8);
+
+
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+	padding: 30px;
+	border: 1px solid #eee;
+	background-color: $hover-color;
+	border-radius: 3px;
+}
+
+.modal-wrapper {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 8;
+	background-color: $opacity-color;
+}
